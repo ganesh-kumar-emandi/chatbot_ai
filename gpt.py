@@ -8,8 +8,7 @@ from langchain_community.vectorstores import FAISS
 from langchain.prompts import ChatPromptTemplate
 
 
-OpenAI_API_KEY="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"
-st.header("type_gpt")
+```python OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") ``` 
 with st.sidebar:
     st.title("MY PDF")
     file=st.file_uploader("Upload notes PDF and start asking questions",type="pdf")
